@@ -10,6 +10,9 @@ a:hover {
     }
 body {
     background-color: lightgrey;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:16px;
+    color:black;
 }
 
 h1 {
@@ -25,4 +28,28 @@ p {
 }
 nav {
     text-align: center;
+}
+
+nav a {
+    color: white;
+    margin-right: 0px;
+    font-weight:bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: blue;
+    color: white;
+}
+
+.parcours {
+    justify-items: center;
 }
