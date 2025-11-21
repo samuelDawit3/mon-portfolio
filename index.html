@@ -3,52 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page de presentation</title>
+    <title>Portfolio - Étudiant</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur mon portfolio</h1>
-        <nav>
+        <div class="logo">Portfolio</div>
+        <nav class="menu" aria-label="Navigation principale">
             <a href="index.html">Présentation</a>
             <a href="index2.html">Parcours</a>
             <a href="index3.html">Avenir</a>
-            <a href="index3.html">Galerie</a>
+            <a href="index4.html">Galerie</a>
+            <a href="contact.html">Contact</a>
         </nav>
+        <div class="recherche">Recherche</div>
     </header>
-    <hr>
 
     <main>
-        <section id="presentation">
-            <h1>Presentation</h1>
-            <p>Bonjour, je suis <strong>un étudiant.</strong> Je vais faire des merveilles informatique.
-                Curieux et motivé, j’aime apprendre et explorer de nouvelles technologies. 
-                Mon objectif est de développer mes compétences pour créer des projets innovants et réaliser de grandes choses dans le domaine de l’informatique. 
-                Je suis convaincu que, grâce à ma persévérance et à ma créativité, je pourrai accomplir des merveilles et contribuer à façonner l’avenir numérique.
-            </p>
-        </section>
-        <hr>
-        <section id="parcours">
-            <h2>Parcours</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Institution</th>
-                        <th>Année scolaire</th>
-                        <th>Moyenne</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Ulco</td>
-                        <td>2025-2028</td>
-                        <td>15,5</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <hr>
+        <div class="col-gauche">
+            <div class="zone1">
+                <h2>Navigation rapide</h2>
+                <ul>
+                    <li><a href="#presentation">Présentation</a></li>
+                    <li><a href="#parcours">Parcours</a></li>
+                    <li><a href="#about">À propos</a></li>
+                </ul>
+            </div>
+            <div class="zone2">
+                <h2>Contact</h2>
+                <p>Email: contact@monsite.com</p>
+            </div>
+        </div>
+
+        <div class="zone3">
+            <!-- Section Présentation -->
+            <section id="presentation">
+                <h1>Présentation</h1>
+                <p>
+                    Bonjour, je suis <strong>un étudiant en informatique</strong>, passionné par les nouvelles technologies et le développement logiciel. 
+                    Mon objectif est de devenir un expert dans le domaine de l'informatique et de contribuer à des projets innovants qui ont un impact positif.
+                </p>
+                <p>
+                    Je suis curieux, motivé et toujours prêt à relever de nouveaux défis. Ce site présente mon parcours, mes compétences et mes projets.
+                </p>
+            </section>
+
+            <!-- Section Parcours -->
+            <section id="parcours">
+                <h2>Parcours</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Institution</th>
+                            <th>Année scolaire</th>
+                            <th>Moyenne</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ULCO</td>
+                            <td>2025–2028</td>
+                            <td>15,5</td>
+                        </tr>
+                        <tr>
+                            <td>Lycée Jean Bart</td>
+                            <td>2022–2025</td>
+                            <td>16,2</td>
+                        </tr>
+                        <tr>
+                            <td>Collège Robespierre</td>
+                            <td>2018–2022</td>
+                            <td>14,8</td>
+                        </tr>
+                        <tr>
+                            <td>École élémentaire Jules Ferry</td>
+                            <td>2012–2018</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Formation en développement web (autodidacte)</td>
+                            <td>2023–2025</td>
+                            <td>En cours</td>
+                        </tr>
+                        <tr>
+                            <td>Certification Python (OpenClassrooms)</td>
+                            <td>2024</td>
+                            <td>Validé</td>
+                        </tr>
+                        <tr>
+                            <td>Certification HTML/CSS (FreeCodeCamp)</td>
+                            <td>2023</td>
+                            <td>Validé</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+        </div>
+
+        <div class="zone4">
+            <!-- Section À propos -->
+            <section id="about">
+                <h2>À propos</h2>
+                <p>
+                    Passionné par l'informatique et les nouvelles technologies, je suis toujours à la recherche de nouveaux défis.
+                </p>
+            </section>
+        </div>
     </main>
-    <footer>&copy; 2025 Mon site</footer>
+
+    <footer>
+        <div class="infos-legales">&copy; 2025 Mon site. Tous droits réservés.</div>
+        <div class="contact">Contact</div>
+        <div class="autre">Réseaux sociaux</div>
+    </footer>
 </body>
 </html>

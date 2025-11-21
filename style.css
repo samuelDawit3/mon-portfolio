@@ -1,39 +1,137 @@
-li:hover {
-    color: blue;
-    text-decoration: none;
-    cursor: pointer;
-    }
-a:hover {
-    color: blue;
-    text-decoration: none;
-    cursor: pointer;
-    }
-body {
-    background-color: lightgrey;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size:16px;
-    color:black;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: lightgrey;
+    color: black;
+}
+
+/* Header */
+header {
+    height: 10vh;
+    display: flex;
+    width: 100%;
+}
+
+.logo {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+
+.menu {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: gray;
+}
+
+.recherche {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    display: flex;
+    width: 100%;
+}
+
+.col-gauche {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.zone1, .zone2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: gray;
+}
+
+.zone2 {
+    background-color: gray;
+}
+
+.zone3 {
+    width: 60%;
+    padding: 20px;
+    background-color: gray;
+}
+
+.zone4 {
+    width: 20%;
+    padding: 20px;
+    background-color: gray;
+}
+
+/* Footer */
+footer {
+    height: 10vh;
+    display: flex;
+    width: 100%;
+}
+
+.infos-legales {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+
+.contact {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+
+.autre {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+
+/* Existing styles */
 h1 {
     color: darkblue;
     text-align: center;
     font-family: 'Arial';
-    }
+}
+
 p {
     font-size: 16px;
     line-height: 1.5;
     margin: 10px 0;
     font-family: 'Verdana';
 }
-nav {
-    text-align: center;
-}
 
 nav a {
     color: white;
-    margin-right: 0px;
-    font-weight:bold;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 nav a:hover {
@@ -45,11 +143,92 @@ th, td {
     padding: 10px;
     text-align: center;
 }
+
 th {
     background-color: blue;
     color: white;
 }
 
-.parcours {
-    justify-items: center;
+li:hover {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+    }
+a:hover {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+    }
+/* Styles pour le formulaire de contact (ajout) */
+/* ------- CONTAINER ------- */
+.contact-form {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* ------- TITLES ------- */
+.contact-form h1,
+.contact-form .lead {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+/* ------- FORM LAYOUT ------- */
+.form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ------- LABELS + INPUTS ------- */
+label {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+input,
+textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: inherit;
+  background: #fff;
+}
+
+textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+/* ------- BUTTON ------- */
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #333;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* ------- META TEXT ------- */
+.contact-meta {
+  font-size: 14px;
+  color: #222;
+  margin-top: 18px;
+  line-height: 1.6;
 }

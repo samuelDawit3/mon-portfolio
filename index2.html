@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,27 +8,67 @@
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur mon portfolio</h1>
-        <nav>
+        <div class="logo">Portfolio</div>
+        <nav class="menu" aria-label="Navigation principale">
             <a href="index.html">Présentation</a>
             <a href="index2.html">Parcours</a>
             <a href="index3.html">Avenir</a>
-            <a href="index3.html">Galerie</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="contact.html">Contact</a>
         </nav>
+        <div class="recherche">Recherche</div>
     </header>
-    <hr>
-    <section id="parcours">
-        <h1>Parcours</h1>
-        <p>
-            Je fais des études en informatique pour devenir ingénieur d'intelligence artificiel.
-        </p>
-        
-        <ul>
-            <li>Projet 1: Développement d'une application web</li>
-            <li>Projet 2: Création d'un site e-commerce</li>
-            <li>Compétence 1: Programmation en Python</li>
-            <li>Compétence 2: Développement front-end</li>
-        </ul>
-    </section>
+
+    <main>
+        <div class="col-gauche">
+            <div class="zone1">
+                <h2>Navigation rapide</h2>
+                <ul>
+                    <li><a href="#education">Formation</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                </ul>
+            </div>
+            <div class="zone2">
+                <h2>Contact</h2>
+                <p>Email: contact@monsite.com</p>
+            </div>
+        </div>
+
+        <div class="zone3">
+            <section id="education">
+                <h1>Parcours académique</h1>
+                <p>
+                    Je suis actuellement étudiant en informatique, spécialisé dans le développement logiciel et l'intelligence artificielle. 
+                    Mon parcours académique m'a permis d'acquérir des compétences solides en programmation, en gestion de projets et en résolution de problèmes complexes.
+                </p>
+                
+                <h2>Projets académiques</h2>
+                <ul>
+                    <li>Développement d'une application web de gestion</li>
+                    <li>Création d'un système de recommandation</li>
+                    <li>Implémentation d'algorithmes d'IA</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="zone4">
+            <section id="competences">
+                <h2>Compétences techniques</h2>
+                <ul>
+                    <li>Programmation : Python, JavaScript, Java</li>
+                    <li>Développement web : HTML, CSS, React</li>
+                    <li>Base de données : MySQL, MongoDB</li>
+                    <li>Outils : Git, Docker, Linux</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="infos-legales">&copy; 2025 Mon site. Tous droits réservés.</div>
+        <div class="contact">Contact</div>
+        <div class="autre">Réseaux sociaux</div>
+    </footer>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,30 +8,67 @@
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur mon portfolio</h1>
-        <nav>
+        <div class="logo">Portfolio</div>
+        <nav class="menu" aria-label="Navigation principale">
             <a href="index.html">Présentation</a>
             <a href="index2.html">Parcours</a>
             <a href="index3.html">Avenir</a>
-            <a href="index3.html">Galerie</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="contact.html">Contact</a>
         </nav>
+        <div class="recherche">Recherche</div>
     </header>
-    <hr>
+
     <main>
-        <section id="avenir">
-            <h1>Avenir</h1>
-            <p>
-                Je fais des études en informatique pour devenir ingénieur d'intelligence artificiel. Je fais des études en informatique pour devenir ingénieur en intelligence artificielle. Ce domaine me passionne car il allie mathématiques, programmation et créativité. Mon ambition est de concevoir des solutions intelligentes capables de faciliter la vie quotidienne, d’optimiser les systèmes et de contribuer aux avancées technologiques de demain. Je suis motivé à apprendre, à relever des défis complexes et à transformer mes connaissances en projets concrets et utiles.
-            </p>
-            
-            <ol>
-                <li>Projet 1: Développement d'une application web</li>
-                <li>Projet 2: Création d'un site e-commerce</li>
-                <li>Projet 3: Développement d'une application mobile</li>
-            </ol>
-        </section>
+        <div class="col-gauche">
+            <div class="zone1">
+                <h2>Navigation rapide</h2>
+                <ul>
+                    <li><a href="#objectifs">Objectifs</a></li>
+                    <li><a href="#projets">Projets futurs</a></li>
+                    <li><a href="#technologies">Technologies</a></li>
+                </ul>
+            </div>
+            <div class="zone2">
+                <h2>Contact</h2>
+                <p>Email: contact@monsite.com</p>
+            </div>
+        </div>
+
+        <div class="zone3">
+            <section id="avenir">
+                <h1>Avenir</h1>
+                <p>
+                    Je fais des études en informatique pour devenir ingénieur en intelligence artificielle. 
+                    Ce domaine me passionne car il allie mathématiques, programmation et créativité.
+                </p>
+
+                <h2>Objectifs professionnels</h2>
+                <ul>
+                    <li>Travailler dans une entreprise innovante spécialisée en IA</li>
+                    <li>Contribuer à des projets open source</li>
+                    <li>Créer ma propre startup technologique</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="zone4">
+            <section id="technologies">
+                <h2>Technologies à maîtriser</h2>
+                <ul>
+                    <li>TensorFlow</li>
+                    <li>PyTorch</li>
+                    <li>Kubernetes</li>
+                    <li>Cloud Computing</li>
+                </ul>
+            </section>
+        </div>
     </main>
-    
-    <footer>&copy; 2025 Mon site</footer>
+
+    <footer>
+        <div class="infos-legales">&copy; 2025 Mon site. Tous droits réservés.</div>
+        <div class="contact">Contact</div>
+        <div class="autre">Réseaux sociaux</div>
+    </footer>
 </body>
 </html>

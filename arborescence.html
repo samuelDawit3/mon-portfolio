@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arborescence complète</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+    }
+
+    header, footer {
+      display: flex;
+      width: 100%;
+    }
+
+    header {
+      height: 10vh;
+    }
+
+    footer {
+      height: 10vh;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      width: 100%;
+    }
+
+    /* Header */
+    .logo {
+      width: 15%;
+      background-color: #f4c542;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .menu {
+      width: 70%;
+      background-color: #f9d65c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .recherche {
+      width: 15%;
+      background-color: #f6e27a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Main */
+    .col-gauche {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .zone1, .zone2 {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffd166;
+      border-bottom: 2px solid white;
+    }
+
+    .zone2 {
+      background-color: #fab763;
+    }
+
+    .zone3 {
+      width: 60%;
+      background-color: #f4978e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .zone4 {
+      width: 20%;
+      background-color: #ffb997;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Footer */
+    .infos-legales {
+      width: 60%;
+      background-color: #a2d2ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact {
+      width: 20%;
+      background-color: #bde0fe;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .autre {
+      width: 20%;
+      background-color: #caffbf;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Logo</div>
+    <div class="menu">Menu</div>
+    <div class="recherche">Recherche</div>
+  </header>
+
+  <main>
+    <div class="col-gauche">
+      <div class="zone1">Zone 1</div>
+      <div class="zone2">Zone 2</div>
+    </div>
+    <div class="zone3">Zone 3</div>
+    <div class="zone4">Zone 4</div>
+  </main>
+
+  <footer>
+    <div class="infos-legales">Infos légales</div>
+    <div class="contact">Contact</div>
+    <div class="autre">Autre</div>
+  </footer>
+
+</body>
+</html>
