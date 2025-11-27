@@ -4,144 +4,130 @@
     box-sizing: border-box;
 }
 
+/* ---------------- BODY ---------------- */
+
 body {
     height: 100vh;
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: grid;
+    grid-template-rows: 10vh auto 10vh;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    font-family: 'Trebuchet MS', Arial, sans-serif;
     background-color: lightgrey;
     color: black;
 }
+li:hover {
+    color: #4A90E2;
+}
+/* ---------------- HEADER ---------------- */
 
-/* Header */
 header {
-    height: 10vh;
-    display: flex;
-    width: 100%;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-areas: "logo menu recherche";
+    background: gray;
 }
 
-.logo {
-    width: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: gray;
-}
-
-.menu {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    background-color: gray;
-}
-
+.logo,
+.menu,
 .recherche {
-    width: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: gray;
+    gap: 2vw;
 }
 
-/* Main Content */
+/* ---------------- MAIN LAYOUT ---------------- */
+
 main {
-    flex: 1;
-    display: flex;
-    width: 100%;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas: "colgauche zone3 zone4";
+    gap: 0;
 }
 
 .col-gauche {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
+    grid-area: colgauche;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+        "zone1"
+        "zone2";
 }
 
-.zone1, .zone2 {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background-color: gray;
-}
-
-.zone2 {
-    background-color: gray;
-}
-
-.zone3 {
-    width: 60%;
-    padding: 20px;
-    background-color: gray;
-}
-
+.zone1,
+.zone2,
+.zone3,
 .zone4 {
-    width: 20%;
-    padding: 20px;
-    background-color: gray;
+    padding: 3vh 3vw;
+    background: gray;
 }
 
-/* Footer */
+/* ---------------- FOOTER ---------------- */
+
 footer {
-    height: 10vh;
-    display: flex;
-    width: 100%;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    grid-template-areas: "legal contact autres";
 }
 
-.infos-legales {
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: gray;
-}
-
-.contact {
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: gray;
-}
-
+.infos-legales,
+.contact,
 .autre {
-    width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: gray;
+    background: gray;
 }
 
-/* Existing styles */
+/* ---------------- TEXT ---------------- */
+
 h1 {
     color: darkblue;
     text-align: center;
     font-family: 'Arial';
+    font-size: 4vh;
 }
 
 p {
-    font-size: 16px;
+    font-size: 2vh;
     line-height: 1.5;
-    margin: 10px 0;
+    margin: 2vh 0;
     font-family: 'Verdana';
 }
+
+/* ---------------- NAV ---------------- */
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 2vh;
 }
 
 nav a:hover {
     color: yellow;
 }
 
+a:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+/* ---------------- TABLE ---------------- */
+
 th, td {
-    border: 1px solid black;
-    padding: 10px;
+    border: 0.3vh solid black;
+    padding: 2vh;
     text-align: center;
+    font-size: 2vh;
 }
 
 th {
@@ -149,86 +135,92 @@ th {
     color: white;
 }
 
-li:hover {
-    color: blue;
-    text-decoration: none;
-    cursor: pointer;
-    }
-a:hover {
-    color: blue;
-    text-decoration: none;
-    cursor: pointer;
-    }
-/* Styles pour le formulaire de contact (ajout) */
-/* ------- CONTAINER ------- */
+/* ---------------- CONTACT FORM ---------------- */
+
 .contact-form {
-  max-width: 900px;
-  margin: 0 auto;
-  background: white;
-  padding: 24px;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    width: 90%;
+    max-width: 70vw;
+    margin: 0 auto;
+    background: white;
+    padding: 3vh 3vw;
+    border-radius: 2vw;
+    box-shadow: 0 0 4vh rgba(0,0,0,0.08);
 }
 
-/* ------- TITLES ------- */
 .contact-form h1,
 .contact-form .lead {
-  text-align: center;
-  margin-bottom: 16px;
-  color: #222;
+    text-align: center;
+    margin-bottom: 2vh;
+    color: #222;
+    font-size: 3vh;
 }
 
-/* ------- FORM LAYOUT ------- */
 .form-row {
-  display: flex;
-  gap: 16px;
-  margin-bottom: 16px;
+    display: flex;
+    gap: 2vw;
+    margin-bottom: 2vh;
 }
 
 .form-group {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-/* ------- LABELS + INPUTS ------- */
 label {
-  margin-bottom: 6px;
-  font-size: 14px;
+    margin-bottom: 1vh;
+    font-size: 2vh;
 }
+
+/* ---------------- MODERN INPUTS ---------------- */
 
 input,
 textarea {
-  padding: 10px 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 15px;
-  font-family: inherit;
-  background: #fff;
+    width: 100%;
+    padding: 2vh 2vw;
+    border: 0.3vh solid #d0d0d0;
+    border-radius: 1.5vw;
+    background: #f9f9f9;
+    font-size: 2vh;
+    font-family: inherit;
+    transition: 0.25s ease;
+    outline: none;
+}
+
+input:hover,
+textarea:hover {
+    border-color: #b5b5b5;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #4A90E2;
+    background: white;
+    box-shadow: 0 0 2vw rgba(74,144,226,0.2);
 }
 
 textarea {
-  min-height: 160px;
-  resize: vertical;
+    min-height: 20vh;
+    resize: vertical;
 }
 
-/* ------- BUTTON ------- */
 .btn {
-  display: inline-block;
-  padding: 10px 18px;
-  background: #333;
-  color: white;
-  border-radius: 6px;
-  border: none;
-  font-weight: 600;
-  cursor: pointer;
-  text-decoration: none;
+    display: inline-block;
+    padding: 2vh 3vw;
+    background: #333;
+    color: white;
+    border-radius: 1vw;
+    border: none;
+    font-size: 2vh;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-/* ------- META TEXT ------- */
 .contact-meta {
-  font-size: 14px;
-  color: #222;
-  margin-top: 18px;
-  line-height: 1.6;
+    font-size: 2vh;
+    color: #222;
+    margin-top: 2vh;
+    line-height: 1.6;
 }
+

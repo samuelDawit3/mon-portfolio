@@ -6,9 +6,11 @@
   <title>Contact</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
     <div class="logo">Portfolio</div>
+
     <nav class="menu" aria-label="Navigation principale">
       <a href="index.html">Présentation</a>
       <a href="index2.html">Parcours</a>
@@ -16,7 +18,10 @@
       <a href="galerie.html">Galerie</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <div class="recherche">Recherche</div>
+
+    <div class="recherche">
+      <input type="text" placeholder="Recherche">
+    </div>
   </header>
 
   <main>
@@ -37,50 +42,35 @@
 
     <div class="zone3">
       <section id="contact-form" class="contact-form" aria-labelledby="contact-title">
-        <h1 id="contact-title">Contactez‑moi</h1>
-        <p class="lead">Remplissez le formulaire ci‑dessous ou utilisez votre client mail.</p>
+        <h1 id="contact-title">Contactez-moi</h1>
+        <p class="lead">Remplissez le formulaire ci-dessous ou utilisez votre client mail.</p>
 
-        <!-- envoi via mailto (sans JS). Remplacez l'adresse si besoin. -->
         <form method="post" action="mailto:contact@monsite.com" enctype="text/plain">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Nom *</label>
-              <input id="name" name="Nom" type="text" placeholder="Votre nom" required>
-            </div>
+          <div class="form-grid">
+            <label for="name">Nom *</label>
+            <input id="name" type="text" required>
 
-            <div class="form-group">
-              <label for="email">Email *</label>
-              <input id="email" name="Email" type="email" placeholder="Votre email" required>
-            </div>
+            <label for="email">Email *</label>
+            <input id="email" type="email" required>
+
+            <label for="phone">Téléphone</label>
+            <input id="phone" type="tel">
+
+            <label for="subject">Objet</label>
+            <input id="subject" type="text">
+
+            <label for="message">Message *</label>
+            <textarea id="message" required></textarea>
           </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label for="phone">Téléphone</label>
-              <input id="phone" name="Téléphone" type="tel" placeholder="Votre numéro">
-            </div>
-
-            <div class="form-group">
-              <label for="subject">Objet</label>
-              <input id="subject" name="Objet" type="text" placeholder="Objet du message">
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group" style="flex:1;">
-              <label for="message">Message *</label>
-              <textarea id="message" name="Message" placeholder="Votre message" required></textarea>
-            </div>
-          </div>
-
-          <div style="display:flex;align-items:center;gap:12px;margin-top:8px;">
+          <div class="btn-grid">
             <button type="submit" class="btn">Envoyer</button>
-            <a href="mailto:contact@monsite.com" class="btn" style="background:#666;">Ouvrir mail</a>
+            <a href="mailto:contact@monsite.com" class="btn-alt">Ouvrir mail</a>
           </div>
         </form>
 
-        <div class="contact-meta" aria-hidden="false">
-          <strong>Ou contactez‑moi directement :</strong>
+        <div class="contact-meta">
+          <strong>Ou contactez-moi directement :</strong>
           <p>Email: <a href="mailto:contact@monsite.com">contact@monsite.com</a></p>
           <p>Téléphone: +33 6 12 34 56 78</p>
         </div>
@@ -88,17 +78,15 @@
     </div>
 
     <div class="zone4">
-      <section aria-label="Réseaux et horaires">
-        <h2>Réseaux & Horaires</h2>
-        <p>LinkedIn : <a href="https://www.linkedin.com/in/monprofil" target="_blank" rel="noopener">monprofil</a></p>
-        <p>GitHub : <a href="https://github.com/monprofil" target="_blank" rel="noopener">monprofil</a></p>
-        <p>Horaires : Lun - Ven, 9h - 18h</p>
-      </section>
+      <h2>Réseaux & Horaires</h2>
+      <p>LinkedIn : <a href="#">monprofil</a></p>
+      <p>GitHub : <a href="#">monprofil</a></p>
+      <p>Horaires : Lun - Ven, 9h - 18h</p>
     </div>
   </main>
 
   <footer>
-    <div class="infos-legales">&copy; 2025 Mon site. Tous droits réservés.</div>
+    <div class="infos-legales">&copy; 2025 Mon site</div>
     <div class="contact">Contact</div>
     <div class="autre">Réseaux sociaux</div>
   </footer>
