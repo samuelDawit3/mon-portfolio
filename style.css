@@ -5,7 +5,6 @@
 }
 
 /* ---------------- BODY ---------------- */
-
 body {
     height: 100vh;
     width: 100vw;
@@ -20,11 +19,12 @@ body {
     background-color: lightgrey;
     color: black;
 }
+
 li:hover {
     color: #4A90E2;
 }
-/* ---------------- HEADER ---------------- */
 
+/* ---------------- HEADER ---------------- */
 header {
     grid-area: header;
     display: grid;
@@ -42,12 +42,27 @@ header {
     gap: 2vw;
 }
 
-/* ---------------- MAIN LAYOUT ---------------- */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2vh;
+}
 
+nav a:hover {
+    color: yellow;
+}
+
+a:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+/* ---------------- MAIN LAYOUT ---------------- */
 main {
     grid-area: main;
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 20vw 60vw 20vw;
     grid-template-areas: "colgauche zone3 zone4";
     gap: 0;
 }
@@ -70,7 +85,6 @@ main {
 }
 
 /* ---------------- FOOTER ---------------- */
-
 footer {
     grid-area: footer;
     display: grid;
@@ -88,7 +102,6 @@ footer {
 }
 
 /* ---------------- TEXT ---------------- */
-
 h1 {
     color: darkblue;
     text-align: center;
@@ -103,26 +116,7 @@ p {
     font-family: 'Verdana';
 }
 
-/* ---------------- NAV ---------------- */
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 2vh;
-}
-
-nav a:hover {
-    color: yellow;
-}
-
-a:hover {
-    color: blue;
-    cursor: pointer;
-}
-
 /* ---------------- TABLE ---------------- */
-
 th, td {
     border: 0.3vh solid black;
     padding: 2vh;
@@ -136,7 +130,6 @@ th {
 }
 
 /* ---------------- CONTACT FORM ---------------- */
-
 .contact-form {
     width: 90%;
     max-width: 70vw;
@@ -173,7 +166,6 @@ label {
 }
 
 /* ---------------- MODERN INPUTS ---------------- */
-
 input,
 textarea {
     width: 100%;
@@ -224,3 +216,33 @@ textarea {
     line-height: 1.6;
 }
 
+/* ---------------- GALLERY ---------------- */
+.gallery-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+    gap: 2vw;
+    padding: 2vh 0;
+}
+
+.gallery-item {
+    text-align: center;
+    background: #f5f5f5;
+    padding: 1vh 1vw;
+    border-radius: 1.5vw;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2vh 4vh rgba(0,0,0,0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 1vw;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
