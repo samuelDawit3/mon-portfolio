@@ -31,7 +31,7 @@ header {
     grid-template-columns: 15% 70% 15%;
     grid-template-areas: "logo menu recherche";
     background: gray;
-    background-color: darkblue;
+    background-color: blue;
 }
 
 .logo,
@@ -44,7 +44,7 @@ header {
 }
 
 nav a {
-    color: blck;
+    color: black;
     text-decoration: none;
     font-weight: bold;
     font-size: 2vh;
@@ -91,6 +91,8 @@ footer {
     display: grid;
     grid-template-columns: 60% 20% 20%;
     grid-template-areas: "legal contact autres";
+    background-color: blue;
+    color:#222;
 }
 
 .infos-legales,
@@ -99,12 +101,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: gray;
+    background: blue;
 }
 
 /* ---------------- TEXT ---------------- */
 h1 {
-    color: darkblue;
+    color: black;
     text-align: center;
     font-family: 'Arial';
     font-size: 4vh;
